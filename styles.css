@@ -3,25 +3,26 @@
 
 :root{
     /* Primary Colors */
-    --pale-blue: hsl(225, 100%, 94%)
-    --bright-blue: hsl(245, 75%, 52%)
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
 
     /* Neutral Colors */
-    --very-pale-blue: hsl(225, 100%, 98%)
-    --desaturated-blue: hsl(224, 23%, 55%)
-    --dark-blue: hsl(223, 47%, 23%)
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
 
 }
 
 
-/* html{
-    background-image: url(./images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
+html{
+    /* background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat; */
 
-} */
+    background-color: var(--pale-blue);
+
+}
 
 body {
-    font-family: 'Outfit', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     box-sizing: border-box;
     background-image: url(./images/pattern-background-desktop.svg);
@@ -35,7 +36,7 @@ body {
 
 .main-container{
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 400px;
     background-color: #FFFFFF;
 
     border-radius: 20px;
@@ -47,7 +48,7 @@ body {
 }
 
 .details-container{
-    padding: 0 2rem;
+    padding: 2rem 2rem;
     text-align: center;
 }
 
@@ -55,20 +56,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1;
 }
 
 .plan-container{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* align-items: center;
     justify-content: center; */
 }
+
+
 
 .payment-btn{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     margin: 1rem;
+    background-color: var(--bright-blue);
+    color: white;
+
 }
 
 .cancel-btn{
