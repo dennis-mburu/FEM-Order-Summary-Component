@@ -26,4 +26,56 @@ body {
     box-sizing: border-box;
     background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-container{
+    margin: 0 auto;
+    max-width: 375px;
+    background-color: #FFFFFF;
+
+    border-radius: 20px;
+}
+
+.svg-container img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.details-container{
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.payment-btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.cancel-btn{
+    border: none;
+    background-color: inherit;
+}
+
+button{
+    cursor: pointer;
 }
